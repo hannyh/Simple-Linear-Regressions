@@ -1,4 +1,13 @@
+#Galton's Peas
+
+#Research Task: Test if there is a statistically significant inheritance effect between parent pea 
+#diameters and offspring pea diameters. 
+
 #Data
+#Data Features: The data is linear, has no outliers or influential 
+#observations, and it has a constant variance (no megaphone shapes). Therefore, it is well suited for a
+#Simple Linear Regression Model. 
+
 #from 1877 experiment by Galton
 peas <- read.csv(header=TRUE, sep=",", text="
          Parent, Offspring
@@ -111,17 +120,8 @@ summary(peas.out)
 # Our r squared value is  0.8554. This means that 85.5% of the variation in Offspring Pea Diameter can
 # be explained by the model Offspring = beta0 + beta1*parent + epsilon, epsilon~N(0,sigma2)
 
-#Research Task: Test if there is a statistically significant inheritance effect between parent pea 
-#diameters and offspring pea diameters. 
-
-#Data Features that Match Analysis Strengths: Our data is linear, has no outliers or influential 
-#observations, and it has a constant variance (no megaphone shapes). Therefore, it is well suited for a
-#Simple Linear Regression Model. 
-
 #Analysis Weakness: This model is not necessarily meant for predicting future observations of Offspring
 #Diameter. It is meant more for estimating the correlation between the data that we currently have. 
 
-#Challenge:
-#Research Task: Is there a statistically significant correlation between human height and weight.
-#data source: http://wiki.stat.ucla.edu/socr/index.php/SOCR_Data_Dinov_020108_HeightsWeights
+
 
