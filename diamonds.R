@@ -1,3 +1,12 @@
+#Singapore Diamond Market
+
+#Research Task: Predict the Price of a One Carat Diamond
+
+#Data Features: Although the data did not initially follow an additive model, we were able to greatly
+#improve it by applying a log trasformation. Then it was pretty good because it had a fairly constant
+# variance and minimal curvature.
+
+
 diamonds <- read.csv(header=FALSE, sep="", text="
 0.3  D VS2  GIA  1302
 0.3  E VS1  GIA  1510
@@ -382,20 +391,10 @@ xlab("Diamond Size (carat)")+
 #Our model predicts diamonds price really well when the diamonds are small. It doesn't do so great when
 #the diamonds are big, however. We could improve the predictions for large diamonds by taking other 
 #factors besides carats into account. We could also see how clarity, cert, and color affect price. 
-
-#Research Task: Predict the Price of a One Carat Diamond
-
-#Data Features: Although the data did not initially follow an additive model, we were able to greatly
-#improve it by applying a log trasformation. Then it was pretty good because it had a fairly constant
-# variance and minimal curvature. 
+ 
 
 #Analysis Weakness: The data does not take other explanatory variables into account that could improve
 # the accuracy of the model. 
-
-#Challenge
-#Research Task: Predict Health Insurance cost based on the age of the buyer. 
-#Data: https://www.valuepenguin.com/how-age-affects-health-insurance-costs
-#This data also has quite a bit of curvature to it. 
 
 
 
